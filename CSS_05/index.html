@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: solid black 1px;
+        }
+        img{
+            margin: 10px;
+        }
+        /* .img2{
+            top: 100px;
+            therefore ye static hai
+             position: relative;
+            top: 100px;
+        } */
+        .container{
+            position: relative;
+            height: 8000px;
+            background-color: blanchedalmond;
+        }
+        /* .img2{
+            /* position: absolute;
+            top: 100px; */
+        /* } */ 
+        .img3{
+            position: sticky;
+            top: 100px;
+        }
+        .img4{
+            position: fixed;
+            /* container me height 8000px kardi
+            jab me scroll karunga toh 4th image fixed rahegi */
+        }
+        .box{
+            background-color: aquamarine;
+            height: 5000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="logo1" class="img1">
+
+        <img src="logo.png" alt="logo2" class="img2">
+
+        <img src="logo.png" alt="logo3" class="img3">
+
+        <img src="logo.png" alt="logo4" class="img4">
+    </div>
+    <div class="box">
+
+    </div>
+
+    
+</body>
+</html>

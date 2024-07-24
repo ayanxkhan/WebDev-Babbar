@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        div {
+            height: 100px;
+            width: 200px;
+            display: inline-block;
+            border: 2px solid black;
+        }
+
+        .container {
+            width: 600px;
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+            /* flex-direction: row-reverse; */
+            /* saare elements left se right direction me arrange ho jayenge */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* box 1 will be at bottom */
+
+            /* justify-content: start; */
+            /* justify-content: end; */
+            /* all the items will shift to end */
+            justify-content: center;
+            /* justify-content: space-around; */
+            /* start aur end me kam space rahegi ye half rahegi beech wali spaces se */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+
+            align-items: flex-start;
+            /* align-content: center; */
+            /* saara content center me aa jayega aur upar aur neeche space rahegi */
+            /* start karne se saara content upar chala jayega aur neeche space rahegi */
+            /* flex-wrap: wrap; */
+
+
+        }
+
+        .box1 {
+            background-color: aqua;
+        }
+
+        .box2 {
+            background-color: palevioletred;
+            height: 200px;
+            /* align-self: flex-end; */
+            /* sirf selected item ko hum start ya end pe rakh sakte hai on cross axis iski priority zyada hoti hai */
+            flex-shrink: 2;
+            /* kisi individual item ko shrink karwana hai irrespective of other items 
+            means ki agar koi container ka size  agar inc ya dec karte hai toh uske andar ke items apne aap khudko 
+            shrink kar lete hai equally par agar kisi particular item ko half ya double amount me
+            shrink karwana hai toh we use flex shrink */
+            /* flex grow will be same case
+            agar container ka size increase hua toh saare items grow karenge equally */
+
+        
+        }
+
+        .box3 {
+            background-color: yellowgreen;
+            height: 75px;
+        }
+
+        .box4 {
+            background-color: maroon;
+        }
+
+        .box5 {
+            background-color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flexbox playground</h1>
+    <div class="container">
+        <div class="box1">BOX1</div>
+        <div class="box2">BOX2</div>
+        <div class="box3">BOX3</div>
+        <div class="box4">BOX4</div>
+        <div class="box5">BOX5</div>
+    </div>
+</body>
+
+</html>

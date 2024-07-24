@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color:bisque;
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            background-color: aquamarine;
+            width: 330px;
+            height: 330px;
+            border: 1px solid brown;
+            margin: 5px;
+            padding: 5px;
+            /* box-shadow: 10px 15px brown;  x-offset means x direction me shadow move karegi y-offset color */
+            /*we can add negative values -10px 15px color*/
+            /* box-shadow: 10px 15px 25px brown; */
+              /*5px is blur radius*/
+
+              /* box-shadow: 10px 15px 5px 20px brown; */
+              /* 20px is spread raduis which shows ki aapki shadow kitni spread hogi */
+
+
+              /* box-shadow: inset 10px 15px brown; */
+              /* using inset shadow will be visible inside */
+
+              /* box-shadow: 10px 15px red,15px 8px green; */
+              /* multiple shadows can be adding using comma */
+            
+        }
+
+        #head1{
+            text-shadow: 2px 3px 2px rebeccapurple,4px 6px 4px brown;
+            /* x-offset y-offset blurradius color */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="logo.png" alt="codehelp logo">
+            <h2 id="head1">Welcome to codehelp</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quas delectus quia pariatur possimus
+                laborum dicta iste, eligendi voluptatum aliquam maiores corporis quis culpa perferendis.</p>
+        </div>
+    </div>
+</body>
+
+</html>

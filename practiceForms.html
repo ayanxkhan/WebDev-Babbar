@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Complex Form</h2>
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <label for="phonenumber">Phone:</label>
+        <input type="tel" name="phonenumber" id="phonenumber">
+        <label for="dob">Date of birth:</label>
+        <input type="date" name="dob" id="dob">
+        <p style="display: inline;">Gender:</p>
+       <!--<span>Gender:</span>-->
+        <label for="gender">Male</label>
+        <input type="radio" name="gender" id="gender">
+        <label for="gender">Female</label>
+        <input type="radio" name="gender" id="gender">
+        <br>
+        <label for="country">Country:</label>
+        <select name="country" id="country">
+            <option value="india">India</option>
+            <option value="us">United States</option>
+        </select>
+        
+    </fieldset>
+    <fieldset>
+        <legend>Address</legend>
+        <label for="street">Street:</label>
+        <input type="text" name="street" id="street">
+
+        <label for="city">City:</label>
+        <input type="text" name="city" id="city">
+
+        <label for="street">State:</label>
+        <input type="text" name="state" id="state">
+
+        <label for="code">Zip Code:</label>
+        <input type="text" name="code" id="code">
+    </fieldset>
+
+    <fieldset>
+        <legend>Other Information</legend>
+        <label for="comments">Comments:</label>
+        <br>
+        <textarea name="text" id="comments" cols="30" rows="10"></textarea>
+        <label for="choice">I agree to the terms of service</label>
+        <input type="checkbox" name="choice" id="choice">
+        <br>
+        <br>
+        
+    </fieldset>
+</body>
+</html>

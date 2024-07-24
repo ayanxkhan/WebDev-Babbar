@@ -1,0 +1,38 @@
+.box{
+    width: 400px;
+    height: 400px;
+    background-color: bisque;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    transition: all;
+    transition-duration: 3s;
+    /* transition-delay: 1s; */
+    transition-timing-function: linear;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.box:hover{
+    transform: rotate(360deg); 
+    /* transform: scale(2); */
+    /* using scaling we can inc or dec the size of box */
+    /* transform: scale(0.5); */
+    /* transform: rotate(-45deg); */
+    /* negative value will rotate anti clock wise */
+    /* transform: skew(45deg); */
+    /* using skew we can tilt the element */
+    /* transform: translate(0px,-500px); */
+    /* using translate we can move the element in x and y direction */
+
+}
+p{
+    font-size: 36px;
+}

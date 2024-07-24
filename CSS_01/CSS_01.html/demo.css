@@ -1,0 +1,19 @@
+p2{
+    font-family: 'Times New Roman', Times, serif;
+    color: maroon;
+}
+h1{
+    text-align: center;
+}
+#para1{
+    font-size: larger;
+}
+.paraClass{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p,article{
+    background-color: aqua;
+}
+.p1{
+    background-color: brown;
+}
